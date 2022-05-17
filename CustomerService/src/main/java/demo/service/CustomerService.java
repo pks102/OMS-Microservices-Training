@@ -1,7 +1,10 @@
 package demo.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 
 import demo.entity.Customer;
 
@@ -15,5 +18,5 @@ public class CustomerService {
 	public Customer addCustomer(Customer request) {
 		return customerRepository.save(request);
 	}
-
+	
 }
