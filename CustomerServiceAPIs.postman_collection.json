@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "1528cfb2-fd08-4ea5-b567-551045a6985f",
+		"name": "CustomerServiceAPIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerId\": 600,\r\n    \"customerName\":\"fabiola\",\r\n    \"active\":true,\r\n    \"email\":\"f@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9199/customer/authenticate",
+					"host": [
+						"localhost"
+					],
+					"port": "9199",
+					"path": [
+						"customer",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addCustDetails",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerId\": 600,\r\n    \"customerName\":\"fabiola\",\r\n    \"active\":true,\r\n    \"email\":\"f@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9199/customer/add",
+					"host": [
+						"localhost"
+					],
+					"port": "9199",
+					"path": [
+						"customer",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
