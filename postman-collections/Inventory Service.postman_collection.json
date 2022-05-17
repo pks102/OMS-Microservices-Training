@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "a23792cf-641e-4971-8ce4-1c836229761e",
+		"name": "Inventory Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AddSameProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productId\":\"37\",\r\n    \"storeId\":\"36\",\r\n    \"productName\":\"Smartphone\",\r\n    \"productDescription\":\"s9\",\r\n    \"price\":233333\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9191/product/add",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"product",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"storeId\":\"36\",\r\n    \"productName\":\"Smartphone\",\r\n    \"productDescription\":\"s9\",\r\n    \"price\":233333\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9191/product/add",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"product",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reserve Stock",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"storeId\": 2,\r\n        \"productId\": 3,\r\n        \"quantity\": 1\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9191/inventory/reserveProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"inventory",
+						"reserveProduct"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
